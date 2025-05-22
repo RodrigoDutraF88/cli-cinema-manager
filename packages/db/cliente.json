@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "rrr",
+        "cpf": "123"
+    },
+    {
+        "nome": "teste",
+        "cpf": "1234"
+    },
+    {
+        "nome": "test2",
+        "cpf": "12345"
+    },
+    {
+        "nome": "Rodrigo",
+        "cpf": "12",
+        "permissao": false,
+        "ingressos": [
+            {
+                "horario": "5",
+                "filme": "abc"
+            }
+        ]
+    },
+    {
+        "nome": "oi",
+        "cpf": "1"
+    },
+    {
+        "nome": "rodrigo",
+        "cpf": "123456"
+    },
+    {
+        "nome": "ro",
+        "cpf": "1"
+    }
+]
