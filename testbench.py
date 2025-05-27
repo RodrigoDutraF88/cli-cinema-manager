@@ -4,4 +4,4 @@ from packages.administrador import Administrador
 from packages.cliente import Cliente
 
 
-cinema = Cinema(Administrador("Rodrigo", "12", "3"))
+cinema = Cinema(Cliente("Rodrigo", "12"))

@@ -25,7 +25,7 @@ class Cinema:
     def adicionar_sessao(self, sessao):
         if self.user.get_permissao():
             self.sessoes.append(sessao)
-            self.banco_de_dados_sessao.add(sessao.to_dict())  
+            self.banco_de_dados_sessao.add(sessao)  
             print("Sessão adicionada e salva com sucesso.")
 
 
