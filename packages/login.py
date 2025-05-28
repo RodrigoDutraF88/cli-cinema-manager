@@ -40,7 +40,7 @@ class Login:
                 nome = input("Digite Nome: ")
                 cpf = input("Digite CPF: ")
                 cliente = Cliente(nome, cpf)
-                self.banco_de_usuarios.add(cliente.to_dict())
+                self.banco_de_usuarios.add(cliente)
                 print("Cliente salvo com sucesso!\n")
                 nao_logado = False 
                 self.sessao_user= Cinema(cliente)

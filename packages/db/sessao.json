@@ -6,5 +6,13 @@
     {
         "horario": "5",
         "filme": "Anabelle"
+    },
+    {
+        "horario": "18",
+        "filme": "Premunicao"
+    },
+    {
+        "horario": "19",
+        "filme": "Shrek"
     }
 ]

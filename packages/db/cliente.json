@@ -17,8 +17,8 @@
         "permissao": false,
         "ingressos": [
             {
-                "horario": "5",
-                "filme": "Anabelle"
+                "horario": "18",
+                "filme": "Premunicao"
             }
         ]
     },
@@ -33,5 +33,16 @@
     {
         "nome": "ro",
         "cpf": "1"
+    },
+    {
+        "nome": "Teste",
+        "cpf": "123456789",
+        "permissao": false,
+        "ingressos": [
+            {
+                "horario": "18",
+                "filme": "Premunicao"
+            }
+        ]
     }
 ]

@@ -109,7 +109,7 @@ class Cinema:
             elif opcao == "6":
                 print("Você escolheu listar seus ingressos:")
                 
-                self.user.listar_i
+                self.user.listar_ingressos() 
             
             
             elif opcao == "7":

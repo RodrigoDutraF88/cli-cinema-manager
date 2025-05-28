@@ -2,5 +2,9 @@
     {
         "nome": "Pipoca",
         "preco": "20"
+    },
+    {
+        "nome": "Coca",
+        "preco": "7"
     }
 ]
