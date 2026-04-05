@@ -1,72 +1,78 @@
-# CINEMA VIRTUAL PROJETO LIVRE
-(AL:RODRIGO DUTRA FERREIRA M:242015951)
--> O projeto que desenvolvi aborda um cinema virtual feito com python,
- onde um usuário Cliente ou usuário Administrador podem acessar. 
+# 🎬 Cinema Manager
 
-# UTILIZAÇÃO / CASOS DE USO
--> Execute o script principal main.py
-A aplicação vai ser iniciada no terminal 
+A terminal-based cinema management system built in Python, featuring role-based access for **Administrators** and **Customers**. Developed as a university project at the University of Brasília (UnB).
 
-PASSO 1: LOGIN
-# USUÁRIO ADMINISTRADOR:
--> Após escolher o login como administrador, o usuário deve 
-fornecer :
-- nome  
-- cpf  
--carteirinha (que funciona como senha).
-Se já houver uma conta de cpf e carteirinha fornecida cadastrada guardada em 
--packages/db/administrador.json 
-o login será efetuado.
 
--> Credencial Padrão de Administrador: 
-Nome: Rodrigo
-cpf: 1234
-carteirinha : 4321
+## Overview
 
-# USUÁRIO CLIENTE:
--> Após escolher o login como Cliente, o usuário deve Fornecer:
-- nome 
-- cpf
-dessa forma será criada uma conta para quaisquer credenciais adicionada.
+Cinema Virtual simulates the core workflow of a cinema — managing films, sessions, tickets, and a snack bar entirely through a terminal interface. The system demonstrates object-oriented programming principles with a clean package-based architecture and JSON file persistence.
 
-PASSO 2: APÓS LOGIN
--> Após o login ser efetuado o usuário irá visualizar a área cinema onde há opções 
-de 1 - 9 para escolher :
 
-1)Adicionar Filme
--Exclusivo à Administradores
-Administrador pode adicionar filmes pelo nome, genero e duração.
+## Features
 
-2)Adicionar Sessão
--Exclusivo à Administradores
-Administrador pode adicionar sessões selecionando um filme e escolhendo horário.
-Sessão será armazenada em
-- packages/db/sessao.json
+### Two User Roles
 
-3)Listar Filmes
-O usuário pode observar todos os filmes adicionados.
+**Administrator**
+- Add and manage films (title, genre, duration).
+- Create screening sessions (film, time slot).
+- Add products to the snack bar.
 
-4)Listar Sessões 
-O usuário pode observar todos as sessões adicionados.
+**Customer**
+- Browse available films and sessions.
+- Purchase tickets for any session.
+- Buy snacks from the snack bar.
+- View personal ticket history.
 
-5)Comprar Ingresso Para Sessão escolhida 
--Exclusivo à Clientes
-Cliente pode comprar ingresso, visualizando as sessões disponiveis e escolhendo 
-a que deseja comprar.O ingresso sera adicionado ao banco de dados junto com as credenciais do cliente em:
-- packages/db/cliente.json
+All data is stored in JSON files under `packages/db/`:
+- `administrador.json` Admin credentials.
+- `sessao.json` Screening sessions.
+- `cliente.json` Customer accounts and purchased tickets.
+- `lanche.json` Snack bar inventory.
 
-6)Listar Seus ingressos comprados
-O usuário pode observar todos seus ingressos comprados.
 
-7)Comprar na Lanchonete
-O usuário pode comprar lanches, visualizando os produtos disponiveis e escolhendo o que deseja comprar.
-O lanche comprado será removido de:
-- packages/db/lanche.json
+## 🛠️ Tech Stack
 
-8)Adicionar produtos à lanchonete
--Exclusivo à Administradores
-Administrador pode adcionar produtos à lanchonete oferecendo nome e preço do produto que quer adicionar, onde será armazenado em:
-- packages/db/lanche.json
 
-9)Sair
-O usuario sai do menu fechando o terminal.
+- **Language:** Python 3.x.
+- **Architecture:** Object-Oriented Programming (OOP).
+- **Storage:** JSON file persistence.
+- **Interface:** Terminal (CLI).
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.x installed.
+
+### Run the application
+```bash
+git clone https://github.com/RodrigoDutraF88/CINEMA-RODRIGO-DUTRA-FERREIRA.git
+cd CINEMA-RODRIGO-DUTRA-FERREIRA
+python main.py
+```
+
+
+## Default Admin Credentials
+```
+Name:          Rodrigo
+CPF:           1234
+Password:      4321
+```
+
+## 📂 Project Structure
+
+```
+CINEMA-RODRIGO-DUTRA-FERREIRA/
+├── main.py              # Entry point
+├── testbench.py         # Test cases
+├── .gitignore
+└── packages/
+    └── db/              # JSON data files
+        ├── administrador.json
+        ├── sessao.json
+        ├── cliente.json
+        └── lanche.json
+```
+
+**University:** University of Brasília (UnB)  
+**Author:** Rodrigo Dutra Ferreira
